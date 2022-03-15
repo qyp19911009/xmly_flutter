@@ -10,6 +10,12 @@ class HomePageWidget extends StatefulWidget {
 class _HomePageWidgetState extends State<HomePageWidget> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+        appBar: AppBar(
+            title: Text("我的",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    color: Colors.black, fontWeight: FontWeight.w600)),
+            backgroundColor: Colors.white));
   }
 }
