@@ -20,28 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a88b625-e6c3-4c57-8303-f70c0f31719a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/meLine_5x52_@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/meLine_5x52_@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/msg@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/set@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tom@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/vip@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/工作台@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/意见反馈@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/扫一扫@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/搜索@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/月亮@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/沙漏@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/直播@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/视频@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/钱包@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/钱数@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/麦克风@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/mine/mine_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/mine/mine_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
