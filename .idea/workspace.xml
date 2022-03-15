@@ -19,7 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a88b625-e6c3-4c57-8303-f70c0f31719a" name="Default Changelist" comment="" />
+    <list default="true" id="6a88b625-e6c3-4c57-8303-f70c0f31719a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/route.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/splash_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/utity/screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/mine/mine_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/mine/mine_page.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,12 +53,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="settings.editor.selected.configurable" value="dart.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/lib/utity" />
       <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
@@ -89,25 +99,29 @@
       <screen x="0" y="25" width="1792" height="1035" />
     </state>
     <state x="330" y="201" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1792.1035@0.25.1792.1035" timestamp="1647320338416" />
-    <state width="1690" height="202" key="GridCell.Tab.0.bottom" timestamp="1647345457023">
+    <state width="1690" height="202" key="GridCell.Tab.0.bottom" timestamp="1647352324121">
       <screen x="0" y="25" width="1792" height="1035" />
     </state>
-    <state width="1690" height="202" key="GridCell.Tab.0.bottom/0.25.1792.1035@0.25.1792.1035" timestamp="1647345457023" />
-    <state width="1690" height="202" key="GridCell.Tab.0.center" timestamp="1647345457022">
+    <state width="1690" height="202" key="GridCell.Tab.0.bottom/0.25.1792.1035@0.25.1792.1035" timestamp="1647352324121" />
+    <state width="1690" height="202" key="GridCell.Tab.0.center" timestamp="1647352324121">
       <screen x="0" y="25" width="1792" height="1035" />
     </state>
-    <state width="1690" height="202" key="GridCell.Tab.0.center/0.25.1792.1035@0.25.1792.1035" timestamp="1647345457022" />
-    <state width="1690" height="202" key="GridCell.Tab.0.left" timestamp="1647345457022">
+    <state width="1690" height="202" key="GridCell.Tab.0.center/0.25.1792.1035@0.25.1792.1035" timestamp="1647352324121" />
+    <state width="1690" height="202" key="GridCell.Tab.0.left" timestamp="1647352324120">
       <screen x="0" y="25" width="1792" height="1035" />
     </state>
-    <state width="1690" height="202" key="GridCell.Tab.0.left/0.25.1792.1035@0.25.1792.1035" timestamp="1647345457022" />
-    <state width="1690" height="202" key="GridCell.Tab.0.right" timestamp="1647345457022">
+    <state width="1690" height="202" key="GridCell.Tab.0.left/0.25.1792.1035@0.25.1792.1035" timestamp="1647352324120" />
+    <state width="1690" height="202" key="GridCell.Tab.0.right" timestamp="1647352324121">
       <screen x="0" y="25" width="1792" height="1035" />
     </state>
-    <state width="1690" height="202" key="GridCell.Tab.0.right/0.25.1792.1035@0.25.1792.1035" timestamp="1647345457022" />
+    <state width="1690" height="202" key="GridCell.Tab.0.right/0.25.1792.1035@0.25.1792.1035" timestamp="1647352324121" />
     <state x="367" y="178" key="SettingsEditor" timestamp="1647318868822">
       <screen x="0" y="25" width="1792" height="1035" />
     </state>
     <state x="367" y="178" key="SettingsEditor/0.25.1792.1035@0.25.1792.1035" timestamp="1647318868822" />
+    <state x="797" y="374" width="615" height="518" key="find.popup" timestamp="1647352666033">
+      <screen x="0" y="25" width="1792" height="1035" />
+    </state>
+    <state x="797" y="374" width="615" height="518" key="find.popup/0.25.1792.1035@0.25.1792.1035" timestamp="1647352666033" />
   </component>
 </project>
