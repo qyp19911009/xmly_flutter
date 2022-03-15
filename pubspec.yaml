@@ -32,6 +32,38 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  dio: ^4.0.0 # 网络
+  sp_util: ^2.0.3 #（本地存储）
+  provider: ^5.0.0 #状态管理
+  oktoast: ^3.1.1 #吐司
+  flutter_swiper: ^1.1.6 #轮播
+  flutter_screenutil: ^5.0.0+2 # 布局插
+  url_launcher: ^6.0.9
+  flutter_easyloading: ^3.0.0 # loading插件
+  # 设备信息
+  device_info: ^2.0.0
+  # BottomNavigationBar
+  convex_bottom_bar: ^3.0.0
+  pull_to_refresh: ^2.0.0 #安卓风格 下拉刷新
+  common_utils: ^2.0.2 # 通用工具
+  flutter_easyrefresh: ^2.2.1
+  flutter_spinkit: ^5.0.0
+  cached_network_image: ^3.0.0 #图片缓存插件
+  flutter_staggered_grid_view: ^0.4.0 # 瀑布流布局
+  qr_flutter: ^4.0.0 #生成二维码
+  flutter_qr_reader: ^1.0.5 # 二维码扫描
+  image_picker: ^0.8.3+2  #照片选择
+  permission_handler: ^6.1.3 #权限请求
+  flui: ^0.9.2 #UI框架
+  webview_flutter: ^2.0.12
+  sqflite: ^2.0.0+4 # 本地数据库
+  path_provider: ^2.0.3 # 路经
+  fl_chart: ^0.40.0 # 图形绘制
+  flutter_page_tracker: ^3.0.7 # 埋点
+  flutter_picker: ^2.0.2  #选择器
+  animations: ^2.0.1 #实现transform动画
+  image_gallery_saver: ^1.6.9
+  ota_update: ^3.1.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
