@@ -29,10 +29,24 @@ class _HomePageWidgetState extends State<HomePageWidget> {
         children: [
           Container(
             height: 300,
-            color: Colors.grey,
-          ),
-        ],
-      ),
-    );
+            child: Column(
+              children: [
+                Expanded(
+                    flex: 4,
+                    child: Container(
+                      child: Column(
+                        children: [
+                          Expanded(
+                              flex: 2,
+                              child: Container(
+                              child: Row(children: [
+                            Container(width: 120, color: Colors.black),
+                            Expanded(child: Container(color: Colors.red))
+                          ]))),
+                      Expanded(flex: 1, child: Container(color: Colors.black))
+                    ]))),
+                Expanded(flex: 3, child: Container(color: Colors.grey))
+              ]))
+        ]));
   }
 }
