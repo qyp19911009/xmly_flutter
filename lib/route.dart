@@ -11,7 +11,7 @@ class Routers {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case MINE:
-        return CupertinoPageRoute(builder: (_) => HomePageWidget());
+        return CupertinoPageRoute(builder: (_) => MinePageWidget());
       default: // 找不到路由跳转到空页面并提示
         return CupertinoPageRoute(
             builder: (_) => Scaffold(
