@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../utity/screen.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MinePageWidget extends StatefulWidget {
   const MinePageWidget({Key? key}) : super(key: key);
@@ -14,11 +13,10 @@ class _MinePageWidgetState extends State<MinePageWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Color.fromRGBO(248, 235, 224, 1),
-
         /// 底部内容
         body: Stack(children: [
           Positioned(
-              top: get_statusBarHeight(),
+              top: ScreenUtil().statusBarHeight ,
               left: 0,
               right: 0,
               bottom: 0,
@@ -34,7 +32,7 @@ class _MinePageWidgetState extends State<MinePageWidget> {
                                   Expanded(child: getUserInfo())
                                 ])))),
                       Positioned(bottom: 0,left: 0,right: 0,height: 130,child: Container(color: Colors.white,child: headerBottomBar())),
-                      Positioned(top: 70 + get_statusBarHeight(),left: 20,right: 20,height: 60,child: headerCenterBar())
+                      Positioned(top: 70 + ScreenUtil().statusBarHeight ,left: 20,right: 20,height: 60,child: headerCenterBar())
                     ]))
               ])),
           Positioned(top: 0, left: 0, right: 0, child: getNaviBar()),
@@ -45,10 +43,10 @@ class _MinePageWidgetState extends State<MinePageWidget> {
   Widget getNaviBar() {
     return Container(
         color: Color.fromRGBO(248, 235, 224, 1),
-        height: get_naviBarHeight(),
+        height: ScreenUtil().statusBarHeight + 44,
         child: Column(children: [
           Container(
-            height: get_statusBarHeight(),
+            height:ScreenUtil().statusBarHeight ,
             width: double.infinity,
           ),
           Row(children: [

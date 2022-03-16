@@ -37,7 +37,7 @@ dev_dependencies:
   provider: ^5.0.0 #状态管理
   oktoast: ^3.1.1 #吐司
   flutter_swiper: ^1.1.6 #轮播
-  flutter_screenutil: ^5.0.0+2 # 布局插
+  flutter_screenutil: ^5.3.1
   url_launcher: ^6.0.9
   flutter_easyloading: ^3.0.0 # loading插件
   # 设备信息

@@ -29,7 +29,7 @@ class _SplashPageWidgetState extends State<SplashPageWidget> {
           setState(() {
             if (_timeCount <= 1) {
               _timer.cancel();
-              Navigator.pushReplacementNamed(context, Routers.MINE);
+              Navigator.pushReplacementNamed(context, Routers.INDEX);
             } else {
               _timeCount -= 1;
               adTimeStr = '跳过广告 $_timeCount' + 'S';
