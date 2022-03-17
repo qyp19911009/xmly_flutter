@@ -47,3 +47,8 @@ double get_naviBarHeight(){
 double get_statusBarHeight(){
   return ScreenUtil().statusBarHeight ;
 }
+
+/// 底部
+double get_bottomSafeHeight(){
+  return ScreenUtil().bottomBarHeight;
+}

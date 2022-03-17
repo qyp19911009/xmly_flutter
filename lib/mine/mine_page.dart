@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:xmly_flutter/utity/ui_util.dart';
+
+import '../utity/screen.dart';
 
 class MinePageWidget extends StatefulWidget {
   const MinePageWidget({Key? key}) : super(key: key);
@@ -8,7 +11,28 @@ class MinePageWidget extends StatefulWidget {
   _MinePageWidgetState createState() => _MinePageWidgetState();
 }
 
-class _MinePageWidgetState extends State<MinePageWidget> {
+class _MinePageWidgetState extends State<MinePageWidget> with SingleTickerProviderStateMixin {
+
+  late TabController _tabController;
+
+  late bool controlBottomListViewScrll;
+
+  late ScrollController _scrollController;
+  late ScrollController _scrollController2;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _tabController = TabController(length: 4, vsync: this);
+    _scrollController = ScrollController();
+    _scrollController2 = ScrollController();
+    controlBottomListViewScrll = false;
+    _tabController.addListener(() {
+      print(_tabController.index);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,23 +44,107 @@ class _MinePageWidgetState extends State<MinePageWidget> {
               left: 0,
               right: 0,
               bottom: 0,
-              child: ListView(children: [
-                Container(
-                    height: 280,
-                    child: Stack(children: [
-                      Positioned(top: 0,left: 0,right: 0,height: 150,child: Container(
-                          height: 100,
-                            child: Container(
-                                child: Row(children: [
-                                  getUserImage(),
-                                  Expanded(child: getUserInfo())
-                                ])))),
-                      Positioned(bottom: 0,left: 0,right: 0,height: 130,child: Container(color: Colors.white,child: headerBottomBar())),
-                      Positioned(top: 70 + ScreenUtil().statusBarHeight ,left: 20,right: 20,height: 60,child: headerCenterBar())
-                    ]))
-              ])),
+              child: NotificationListener<ScrollEndNotification>(
+                onNotification: (notification) {
+                  switch (notification.runtimeType) {
+                    case ScrollEndNotification:
+                      _scrollController.addListener(() {
+                        if (_scrollController.position.pixels == _scrollController.position.maxScrollExtent) {
+                          // do something
+                          print("object");
+                          setState(() {
+                            controlBottomListViewScrll = true;
+                          });
+                        }
+                      });
+                      _scrollController.removeListener(() { });
+                      print("滚动停止");
+                      break;
+                    default:
+                      print(notification.runtimeType);
+                        break;
+                    }
+                    return true;
+                  },
+                child: ListView( physics: controlBottomListViewScrll == true ? NeverScrollableScrollPhysics() : null,controller: _scrollController,children: [
+                  Container(
+                      height: 280,
+                      child: Stack(children: [
+                        Positioned(top: 0,left: 0,right: 0,height: 150,child: Container(
+                            height: 100,
+                              child: Container(
+                                  child: Row(children: [
+                                    getUserImage(),
+                                    Expanded(child: getUserInfo())
+                                  ])))),
+                        Positioned(bottom: 0,left: 0,right: 0,height: 130,child: Container(color: Colors.white,child: headerBottomBar())),
+                        Positioned(top: 70 + ScreenUtil().statusBarHeight ,left: 20,right: 20,height: 60,child: headerCenterBar())
+                      ])),
+                  Container(
+                      height: 60,
+                      color: Colors.white60,
+                      child: Container(
+                          margin: EdgeInsets.only(top: 10),
+                          child: Container(color: Colors.white60,child: TabBar(
+                            controller: _tabController, // 4 需要配置 controller！！！
+                            labelColor: Colors.black,
+                            isScrollable: true,
+                            labelStyle: TextStyle(fontSize: 17,fontWeight: FontWeight.w600),
+                            unselectedLabelStyle: TextStyle(fontSize: 14),
+                            indicatorSize: TabBarIndicatorSize.label,
+                            unselectedLabelColor: Colors.grey,
+                            indicatorWeight: 4.0,
+                            indicatorColor: Colors.red,
+                            tabs: <Widget>[
+                              Tab(text: '追更'),
+                              Tab(text: '订阅'),
+                              Tab(text: '历史'),
+                              Tab(text: '下载'),
+                            ],
+                          ),))),
+                  bottomBody()
+                ]),
+              )),
           Positioned(top: 0, left: 0, right: 0, child: getNaviBar()),
         ]));
+  }
+
+  Widget bottomBody() {
+    return Container(
+        height: get_KScreenH() - 280 + get_bottomSafeHeight() + 10,
+        child: NotificationListener<ScrollUpdateNotification>(onNotification: (notification){
+          switch (notification.runtimeType){
+            case ScrollStartNotification:
+              print("开始滚动222"); break;
+            case ScrollUpdateNotification:
+              _scrollController2.addListener(() {
+                if (_scrollController2.offset >= 0.0) {
+                  setState(() {
+                    controlBottomListViewScrll = false;
+                  });
+                }
+              });
+              print("正在滚动"); break;
+            case ScrollEndNotification:
+              _scrollController2.addListener(() {
+                print(_scrollController2.offset);
+                
+              });
+              print("滚动停止2222"); break;
+            default:
+              print(notification.runtimeType);
+              break;
+          }
+          return true;
+        },child: ListView.builder(controller: _scrollController2,physics: controlBottomListViewScrll == false ? NeverScrollableScrollPhysics() : null,itemBuilder: _itemBuilder, itemCount: 10)));
+  }
+
+  Widget _itemBuilder(BuildContext context, int index) {
+    return Container(
+      height: 80,
+      width: double.infinity,
+      child: Text('$index'),
+    );
   }
 
   /// 顶部导航

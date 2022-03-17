@@ -20,31 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a88b625-e6c3-4c57-8303-f70c0f31719a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/tabbar/tab_home_elderly_s~iphone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tabbar/tab_home_elderly_s~iphone@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tabbar/tab_home~iphone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tabbar/tab_home~iphone@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tabbar/tab_me_elderly_s~iphone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tabbar/tab_me_elderly_s~iphone@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tabbar/tab_me_elderly~iphone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tabbar/tab_me_elderly~iphone@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tabbar/tab_mine_newvip~iphone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tabbar/tab_mine_newvip~iphone@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tabbar/tab_mine~iphone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tabbar/tab_mine~iphone@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tabbar/tab_vip_newvip~iphone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tabbar/tab_vip_newvip~iphone@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tabbar/tab_vip~iphone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tabbar/tab_vip~iphone@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/index/index_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/utity/ui_util.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home/home_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/mine/mine_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/mine/mine_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/route.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/route.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/splash_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/splash_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utity/screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utity/screen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,22 +98,22 @@
       <screen x="0" y="25" width="1792" height="1035" />
     </state>
     <state x="330" y="201" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1792.1035@0.25.1792.1035" timestamp="1647320338416" />
-    <state width="1481" height="251" key="GridCell.Tab.0.bottom" timestamp="1647441625191">
+    <state width="1481" height="285" key="GridCell.Tab.0.bottom" timestamp="1647500522420">
       <screen x="0" y="25" width="1792" height="1035" />
     </state>
-    <state width="1481" height="251" key="GridCell.Tab.0.bottom/0.25.1792.1035@0.25.1792.1035" timestamp="1647441625191" />
-    <state width="1481" height="251" key="GridCell.Tab.0.center" timestamp="1647441625191">
+    <state width="1481" height="285" key="GridCell.Tab.0.bottom/0.25.1792.1035@0.25.1792.1035" timestamp="1647500522420" />
+    <state width="1481" height="285" key="GridCell.Tab.0.center" timestamp="1647500522420">
       <screen x="0" y="25" width="1792" height="1035" />
     </state>
-    <state width="1481" height="251" key="GridCell.Tab.0.center/0.25.1792.1035@0.25.1792.1035" timestamp="1647441625191" />
-    <state width="1481" height="251" key="GridCell.Tab.0.left" timestamp="1647441625190">
+    <state width="1481" height="285" key="GridCell.Tab.0.center/0.25.1792.1035@0.25.1792.1035" timestamp="1647500522420" />
+    <state width="1481" height="285" key="GridCell.Tab.0.left" timestamp="1647500522420">
       <screen x="0" y="25" width="1792" height="1035" />
     </state>
-    <state width="1481" height="251" key="GridCell.Tab.0.left/0.25.1792.1035@0.25.1792.1035" timestamp="1647441625190" />
-    <state width="1481" height="251" key="GridCell.Tab.0.right" timestamp="1647441625191">
+    <state width="1481" height="285" key="GridCell.Tab.0.left/0.25.1792.1035@0.25.1792.1035" timestamp="1647500522420" />
+    <state width="1481" height="285" key="GridCell.Tab.0.right" timestamp="1647500522420">
       <screen x="0" y="25" width="1792" height="1035" />
     </state>
-    <state width="1481" height="251" key="GridCell.Tab.0.right/0.25.1792.1035@0.25.1792.1035" timestamp="1647441625191" />
+    <state width="1481" height="285" key="GridCell.Tab.0.right/0.25.1792.1035@0.25.1792.1035" timestamp="1647500522420" />
     <state x="367" y="178" key="SettingsEditor" timestamp="1647318868822">
       <screen x="0" y="25" width="1792" height="1035" />
     </state>
